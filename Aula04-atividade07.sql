@@ -35,4 +35,4 @@ SELECT aluno.nome as "Nome do aluno",
      FROM aluno
 CROSS JOIN curso;
 
-INSERT INTO aluno (nome) VALUES ('João');
+INSERT INTO aluno (nome) VALUES ('Walkiria');
