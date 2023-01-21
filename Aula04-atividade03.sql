@@ -8,8 +8,8 @@ CREATE TABLE aluno (
 	nome VARCHAR(255) NOT NULL
 );
 
-INSERT  INTO aluno (nome) VALUES ('Diogo');
-INSERT  INTO aluno (nome) VALUES ('Vinícius');
+INSERT  INTO aluno (nome) VALUES ('Flavia');
+INSERT  INTO aluno (nome) VALUES ('Shinaydher');
 
 SELECT * FROM aluno;
 
@@ -50,14 +50,6 @@ CREATE TABLE aluno_curso (
    REFERENCES curso (id)
 );
 
-
- /*  
-   FOREIGN KEY (CAMPO_NA_TABELA_ORIGEM)
-   REFERENCES TABELA_DESTINO (CAMPO_TABELA_DESTINO)
-   		ON UPDATE OPÇÃO
-		ON DELETE OPÇÃO
- */
- --  OPÇÃO (RESTRICT, CASCADE)
 
 INSERT  INTO aluno_curso (aluno_id,curso_id) VALUES (1,1);
 INSERT  INTO aluno_curso (aluno_id,curso_id) VALUES (2,1);
